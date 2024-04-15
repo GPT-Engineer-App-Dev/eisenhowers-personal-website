@@ -1,20 +1,12 @@
-export function Navbar() {
+import { Button } from "@/components/ui/button.jsx";
+
+export function Navbar({ onPageChange }) {
   return (
-    <nav className="flex items-center justify-between p-4">
-      <div className="text-xl font-bold">Dwight D. Eisenhower</div>
-      <div className="flex space-x-4">
-        <a href="/" className="hover:text-blue-500">
-          Home
-        </a>
-        <a href="/about" className="hover:text-blue-500">
-          About
-        </a>
-        <a href="/legacy" className="hover:text-blue-500">
-          Legacy
-        </a>
-        <a href="/contact" className="hover:text-blue-500">
-          Contact
-        </a>
+    <nav className="flex items-center justify-between p-4 bg-gray-100">
+      <div>
+        <Button onClick={() => onPageChange("home")}>Home</Button>
+        <Button onClick={() => onPageChange("about")}>About</Button>
+        <Button onClick={() => onPageChange("eisenhower")}>Eisenhower</Button>
       </div>
     </nav>
   );
