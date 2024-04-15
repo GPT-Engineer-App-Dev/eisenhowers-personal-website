@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs.j
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import { Navbar } from "@/components/Navbar.jsx";
+import { Footer } from "@/components/Footer.jsx";
 import "./App.css";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Button>Read More</Button>
         </CardFooter>
       </Card>
+      <Footer />
     </div>
   );
 }
