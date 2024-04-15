@@ -3,11 +3,13 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/componen
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs.jsx";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar.jsx";
 import { Button } from "@/components/ui/button.jsx";
+import { Navbar } from "@/components/Navbar.jsx";
 import "./App.css";
 
 function App() {
   return (
     <div className="container mx-auto">
+      <Navbar />
       <Card className="mt-8">
         <CardHeader>
           <Avatar className="mr-4">
